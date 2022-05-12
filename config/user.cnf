@@ -8,12 +8,12 @@ bind-address=0.0.0.0
 # Disable binary logging
 log_bin=OFF
 
-# Increase buffer pool chunk size to 0.25GB
-innodb_buffer_pool_chunk_size=268435456
+# Increase buffer pool chunk size to 1GB
+innodb_buffer_pool_chunk_size=1073741824
 
 # Set number of buffer pool instances
-innodb_buffer_pool_instances=10
+innodb_buffer_pool_instances=6
 
-# Increase buffer pool size to 2.5GB
+# Increase buffer pool size to 6GB
 # Must be a multiple of chunk_size * pool_instances
-innodb_buffer_pool_size=2684354560
+innodb_buffer_pool_size=6442450944
